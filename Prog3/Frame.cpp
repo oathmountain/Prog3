@@ -62,7 +62,7 @@ namespace prog3{
 			for (Component* c : comps) {
 				c->tick(&comps);
 				if (c->getShoot() == true) {
-					p1 = Projectile::getInstance({ c->getRect().x,c->getRect().y + 20,30,30 }, "spyro.bmp");
+					p1 = Projectile::getInstance({ c->getRect().x,c->getRect().y + 20,30,30 }, "Images/spyro.bmp");
 					temp.push_back(p1);
 					}
 				}

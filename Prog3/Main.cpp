@@ -40,20 +40,20 @@ int main(int argc, char** argv) {
 
 	cout << "Main" << endl;
 	Frame frame;
-	Player* p1 = Player::getInstance({ 400,80,100,100 }, "spritesheet.bmp");
+	Player* p1 = Player::getInstance({ 400,80,100,100 }, "Images/spritesheet.bmp");
 	p1->setSpritesheet();
 	p1->setSpriteWH(38, 50);
 	p1->setSpriteCount(3);
 	p1->setSpriteDelay(20);
-	Player* p2 = Player::getInstance({ 400,400,100,100 }, "spyro.bmp");
+	Player* p2 = Player::getInstance({ 400,400,100,100 }, "Images/spyro.bmp");
 
 	p2->bindUp(SDLK_w);
 	p2->bindDown(SDLK_s);
 	p2->bindLeft(SDLK_a);
 	p2->bindRight(SDLK_d);
 	p2->bindFire(SDLK_f);
-	enemy* e1 = new enemy({ 100,200,100,100 }, "spyro.bmp", 1);
-	enemy* e2 = new enemy({ 100,400,100,100 }, "spyro.bmp", 2);
+	enemy* e1 = new enemy({ 100,200,100,100 }, "Images/spyro.bmp", 1);
+	enemy* e2 = new enemy({ 100,400,100,100 }, "Images/spyro.bmp", 2);
 
 	frame.add(p1);
 	frame.add(p2);
